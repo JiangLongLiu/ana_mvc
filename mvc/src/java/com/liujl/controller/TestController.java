@@ -17,7 +17,7 @@ public class TestController {
 	
 	@RequestMapping(value="/start",method=RequestMethod.POST)
 	public String start(@RequestParam String userName,@RequestParam String passWord,Model model){
-		System.out.println("start page1");
+		System.out.println("start page");
 		model.addAttribute("userName", userName);
 		model.addAttribute("passWord",passWord);
 		return "start";
